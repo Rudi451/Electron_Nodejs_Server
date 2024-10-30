@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.container {
+				width: 80%;
+				background-color: gray;
+			}
+			.content {
+				width: 200px;
+				height: 200px;
+				background-color: aquamarine;
+				overflow: scroll;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Das ist ein Titel</h1>
+		<main class="container">
+			<div class="content">
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eos iure, expedita repellendus dicta ducimus aut voluptatem laboriosam adipisci sequi incidunt nemo atque, optio quisquam necessitatibus, libero provident amet exercitationem.
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ratione, distinctio amet eius dolore dicta. Quas cupiditate, laboriosam a quibusdam cum culpa, amet ducimus numquam pariatur tenetur ab quos id.</p>
+			</div>
+		</main>
+		<script>
+			const projectsList = ['0', {PID: '', id: 1, name: 'project2'}, {PID: '', id: 2, name: 'project1'}];
+
+			const projectId = 1;
+
+			const project = projectsList.find((project) => project && project.id === projectId);
+
+			console.log('Gefundenes Projekt:', project);
+			// Ausgabe: { PID: "", id: 1, name: "project2" }
+		</script>
+	</body>
+</html>

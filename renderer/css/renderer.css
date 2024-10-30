@@ -1,0 +1,16 @@
+#serverList {
+	height: 30vh;
+}
+#outputPanelContainer {
+	/* background-color: brown; */
+	/* max-height: 40vh;
+	height: 40vh; */
+}
+#outputPanel {
+	/* background-color: gray; */
+	max-height: 45vh;
+	overflow: scroll;
+}
+#output {
+	/* background-color: aquamarine; */
+}

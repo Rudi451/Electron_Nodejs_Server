@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'none'" /> -->
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self';" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/renderer.css">
+		<title>Electron Node.js Server App</title>
+	</head>
+	<body class="m-5">
+		<div class="panel panel-default">
+			<div class="panel-body d-flex flex-column">
+				<h1 class="text-center" class="m-2">Node.js Server Manager</h1>
+				<div id="fileInput" class="m-2">
+					<label for="upload" class="text-primary">Wählen Sie den <b>Ordner</b> mit Ihren NodeJs Project: </label>
+					<input type="file" id="upload" name="upload" webkitdirectory />
+				</div>
+				<div class="m-2 p-1 border border-1">
+					<h5>Server List:</h5>
+					<ul id="serverList" class="list-group">
+						<!-- <li class="bg-secondary text-light list-group-item d-flex justify-content-between">
+							<span> Server Name </span>
+							<span class="fw-bold"
+								>Is Running
+
+								<div id="serverListStartBtn" class="btn btn-primary m-2">Start Server</div>
+								<div id="serverListStopBtn" class="btn btn-secondary m-2">Stop Server</div>
+							</span> -->
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="outputPanelContainer">
+<span></span>
+				<div id="outputPanel" class="panel-footer p-1 border border-1">
+					<!-- <div id="checkPackage" class="text-secondary m-2">Checking package.json
+						<img id="iconCheckPackege" alt="">
+					</div>
+					<div id="checkAppFile" class="text-secondary m-2">Looking for server.js
+
+						<img id="iconCheckAppFile" alt="">
+					</div> -->
+					<span class="text-light bg-warning"></span>
+					<h5>Service Console Log:</h5>
+					<div id="output"></div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/bootstrap.js"></script>
+		<script src="./js/renderer.js"></script>
+	</body>
+</html>
